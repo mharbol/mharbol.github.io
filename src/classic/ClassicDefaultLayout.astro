@@ -1,0 +1,15 @@
+---
+import ClassicBaseLayout from "./ClassicBaseLayout.astro";
+import ClassicFooter from "./ClassicFooter.astro";
+import ClassicHeader from "./ClassicHeader.astro";
+
+import "@classic/global_classic.css";
+
+const { pageTitle } = Astro.props;
+---
+
+<ClassicBaseLayout pageTitle={pageTitle}>
+    <ClassicHeader />
+    <slot />
+    <ClassicFooter />
+</ClassicBaseLayout>
