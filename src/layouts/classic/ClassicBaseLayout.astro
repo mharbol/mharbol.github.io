@@ -1,0 +1,10 @@
+---
+import ClassicBoilerplate from "./ClassicBoilerplate.astro";
+
+const { pageTitle } = Astro.props;
+---
+
+<ClassicBoilerplate pageTitle={pageTitle} favicon="/favicon_classic.svg">
+    <slot />
+</ClassicBoilerplate>
+<!-- please forgive the website, I am just a backend engineer -->
