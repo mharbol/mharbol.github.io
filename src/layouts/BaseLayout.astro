@@ -5,10 +5,14 @@
 // go here.
 import Boilerplate from "./Boilerplate.astro";
 
-const { pageTitle } = Astro.props;
+interface Props {
+    pageTitle: string;
+}
+
+const { pageTitle } = Astro.props as Props;
 ---
 
-<Boilerplate pageTitle={pageTitle} favicon="/favicon.svg">
+<Boilerplate {pageTitle} favicon="/favicon.svg">
     <slot />
 </Boilerplate>
 <!-- please forgive the website, I am just a backend engineer -->

@@ -1,5 +1,32 @@
+@import url('colors.module.css');
+
+* {
+    /* Debug */
+    /* border: 1px solid red !important; */
+    margin: 0;
+}
+
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--sumiInk2);
+    font-family: var(--default-font);
+    font-weight: var(--default-font-weight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    color: var(--waveAqua2);
+}
+
+p {
+    color: var(--fujiWhite);
+}
+
+img, picture, video, canvas, svg {
+    max-inline-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--surimiOrange);
 }

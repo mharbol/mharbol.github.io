@@ -2,6 +2,17 @@
 const { href } = Astro.props;
 ---
 
-<p>
-    <a href={href}><slot /></a>
-</p>
+<a href={href}><slot /></a>
+
+<style>
+    a {
+        padding: 4px 12px;
+        border-radius: 15px;
+        margin: 15px 15px 10px;
+        background-color: var(--button-color);
+        color: var(--button-text);
+    }
+    a:hover {
+        background-color: var(--sumiInk4);
+    }
+</style>

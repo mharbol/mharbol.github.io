@@ -1,15 +1,31 @@
 ---
-import NewTabLink from "@components/internal/NewTabLink.astro";
+
 ---
+
+<footer>
+    <div class="footer">
+        <p>
+            View this website source: <a
+                href="https://github.com/mharbol/mharbol.github.io"
+                target="_blank">here</a
+            >
+        </p>
+        <p>Check out <a href="/classic/">classic</a> mode!</p>
+    </div>
+</footer>
 
 <style>
     footer {
         margin-top: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 20px;
     }
 </style>
-
-<footer>
-    <p>Follow me, follow me. Fa-la-la-la-la.</p>
-    <p>View this website source: <NewTabLink href="https://github.com/mharbol/mharbol.github.io">here</NewTabLink></p>
-    <p><a href="/classic/">classic</a></p>
-</footer>

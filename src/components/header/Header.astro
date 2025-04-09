@@ -1,11 +1,20 @@
 ---
 import HeaderNavItem from "./HeaderNavItem.astro";
-import HeaderNavGroup from "./HeaderNavGroup.astro";
 ---
 
-<HeaderNavGroup>
-    <HeaderNavItem href="/">Home</HeaderNavItem>
-    <HeaderNavItem href="/about/">About</HeaderNavItem>
-    <HeaderNavItem href="/projects/">Projects</HeaderNavItem>
-    <HeaderNavItem href="/contact/">Contact</HeaderNavItem>
-</HeaderNavGroup>
+<header>
+    <nav>
+        <HeaderNavItem href="/">Home</HeaderNavItem>
+        <HeaderNavItem href="/about/">About</HeaderNavItem>
+        <HeaderNavItem href="/projects/">Projects</HeaderNavItem>
+        <HeaderNavItem href="/contact/">Contact</HeaderNavItem>
+    </nav>
+</header>
+
+<style>
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+</style>
